@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gabarito:wght@400..900&family=Inter:wght@100..900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITACERAMICA</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid bg-primary text-white p-3">
+        <div class="row align-items-center">
+            <div class="col-auto d-flex flex-column align-items-start">
+                <img src="img/dosea.webp" alt="Logo" class="img-fluid img-dosea">
+            </div>
+            <div class="col">
+                <h1 class="mb-0">ITACERAMICA</h1>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-md d-flex justify-content-between align-items-center p-2"
+        style="background-color: #0086FF !important;">
+        <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="d-flex flex-column flex-md-row w-100">
+                <div class="d-flex align-items-center">
+                    <button id="btnInicio" class="btn btn-transparent mb-2 mb-md-0 d-flex align-items-center">
+                        <svg class="icon-size" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="bi bi-house-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z" />
+                            <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z" />
+                        </svg>
+                        <span class="d-md-none text-white fw-bold ms-2">Início</span>
+                    </button>
+                    <button id="btnComentario"
+                        class="btn btn-transparent mb-2 mb-md-0 d-flex fw-bold">Comentários</button>
+                    <button class="btn-transparent mb-2 mb-md-0" id="btnDarkMode">Modo Noturno</button>
+                </div>
+                <div class="d-flex flex-column flex-md-row ms-md-auto">
+                    <button id="btnUser" class="btn btn-transparent mb-2 mb-md-0 d-flex align-items-center">
+                        <svg class="icon-size" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="m11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                        </svg>
+                        <span class="d-md-none text-white fw-bold ms-2">Login</span>
+                    </button>
+                    <button id="btnFavorite" class="btn btn-transparent mb-2 mb-md-0 d-flex align-items-center">
+                        <svg class="icon-size" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1" />
+                        </svg>
+                        <span class="d-md-none text-white fw-bold ms-2">Favoritos</span>
+                    </button>
+                    <button id="btnCart" class="btn btn-transparent mb-2 mb-md-0 d-flex align-items-center">
+                        <svg class="icon-size" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="bi bi-cart-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                        </svg>
+                        <span class="d-md-none text-white fw-bold ms-2">Carrinho</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <img src="img/vergalhao.webp" alt="Vergalhão Aço Nervurado" title="Vergalhão Aço Nervurado" class="product-image">
+    <div class="product-info">
+        <h2 class="NomeProduto">Vergalhão Aço Nervurado CA-50 10mm 3/8" Barra 12m Simec</h2><br>
+        <h2 class="product-price"> R$:45,99</h2>
+        <button class="btn btn-comprar">Comprar</button>
+    </div>
+    <div class="product">
+        <h2> Especificações Técnicas:</h2>
+        <ul>
+            <li>EAN: 2050000149979</li>
+            <li>Peso: 7.4</li>
+            <li>Inmetro: 106.002/18</li>
+            <li>Produto: Vergalhão</li>
+            <li>Tipo de Material: CA50</li>
+            <li>Uso Indicado: Montagem de Armadura de Aço</li>
+            <li>Acabamento: Nervurado</li>
+        </ul>
+    </div>
+    <footer>ITACERAMICA - CNPJ: 01.010.010/1001-10<br>
+        Endereço: Rua Josefa Lima, 277 - Centro, Itabaiana/Sergipe - CEP 49500-000<br>
+        ® ITACERAMICA – Todos os direitos reservados.
+    </footer>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>

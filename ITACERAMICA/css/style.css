@@ -1,0 +1,466 @@
+/* Remove margens e espaçamentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: "Gabarito", sans-serif;
+    font-size: 45px;
+    color: white;
+    margin-bottom: 0 !important;
+}
+
+.img-fluid {
+    max-height: 150px;
+    /* Ajuste conforme necessário */
+    height: auto;
+    width: auto;
+    position: relative;
+    top: 16px;
+}
+
+/* Estiliza o subtítulo (h2) com uma fonte específica, cor, alinhamento centralizado e espaçamento */
+h2 {
+    font-family: "Gabarito", sans-serif;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+/* Define a fonte principal para a página, fundo, cor do texto, altura da linha e espaçamento de letras */
+html {
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+    color: white;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+}
+
+/* Estiliza a barra de navegação com fundo, overflow e espaçamento */
+nav {
+    margin-bottom: 20px;
+    background-color: #000;
+    margin-bottom: 0;
+}
+
+/* Estiliza os links dentro da navegação com cor, alinhamento e espaçamento */
+.navbar-nav .nav-link {
+    color: white !important;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: white;
+}
+
+/* Estiliza o rodapé com fundo, alinhamento de texto centralizado, espaçamento, cor e posição */
+footer {
+    background-color: #202426;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Define o layout básico do corpo da página, usando flexbox para organizar os elementos verticalmente */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Centraliza os itens dentro de um container flexível, ocupando toda a altura da viewport */
+.grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estiliza o formulário com layout flexível, centralizando itens e definindo largura máxima */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Estiliza os campos de entrada e textarea com bordas arredondadas, padding e cor de fundo */
+input,
+textarea {
+    border: none;
+    padding: 12px 20px;
+    background-color: white;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    border: 2px solid black;
+}
+
+textarea[name="comment"] {
+    height: 100px;
+    /* Ajuste a altura conforme necessário */
+    width: 75%;
+    /* Ajusta a largura para preencher o contêiner pai */
+
+}
+
+/* Estiliza os botões com cor de fundo, bordas arredondadas, padding e cor do texto */
+button {
+    margin-top: 12px;
+    border: none;
+    padding: 12px 20px;
+    background-color: #010D00;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+}
+
+/* Centraliza as imagens na página */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Remove a sublinhado padrão dos links */
+a {
+    text-decoration: none;
+}
+
+/* Estiliza as labels com cor de texto preta */
+label {
+    color: black;
+}
+
+/* Define o layout flexível para o container, com itens flexíveis e espaçamento */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    flex: 1;
+}
+
+/* Estiliza os cartões de produtos com fundo branco, bordas arredondadas, sombra e efeito de transição */
+.card {
+    background-color: #fff;
+    width: 190px;
+    height: 270px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px #070707;
+    margin: 10px;
+    overflow: auto;
+    transition: transform 0.3s;
+}
+
+/* Define o tamanho e o ajuste das imagens dentro dos cartões */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* Estiliza o texto dentro dos cartões, com alinhamento centralizado e espaçamento */
+.card h2 {
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* Adiciona um efeito de aumento no hover dos cartões */
+.card:hover {
+    transform: scale(1.15);
+}
+
+/* Estiliza o nome do produto e os títulos das seções com uma fonte específica, cor e alinhamento */
+.section-title {
+    font-family: "Gabarito", sans-serif;
+    font-size: 40px;
+    color: #202426;
+    text-align: left;
+    padding: 20px;
+    font-weight: 600;
+    padding-left: 125px;
+}
+
+.NomeProduto {
+    font-family: "Gabarito", sans-serif;
+    font-size: 30px;
+    color: #202426;
+    text-align: center;
+    padding: 20px;
+    font-weight: 600;
+}
+
+/* Estiliza o preço do produto com uma fonte maior e cor preta */
+.product-price {
+    font-family: "Gabarito", sans-serif;
+    font-size: 40px;
+    color: #000000;
+    margin-top: 10px;
+}
+
+/* Estiliza o container do produto com layout flexível, cor de fundo e sombras */
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #04457e;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    margin: 20px;
+    color: #fff;
+}
+
+/* Remove as marcações de lista e ajusta a formatação da lista dentro dos produtos */
+.product ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+/* Estiliza a imagem do produto para se ajustar ao container */
+.product-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-width: 600px;
+}
+
+/*----------------------------------------Responsivo-----------------------------------*/
+/* Estilos para dispositivos menores que 1024px */
+@media (max-width: 1024px) {
+    .container {
+        justify-content: center;
+    }
+
+    .card {
+        width: 190px;
+    }
+}
+
+/* Estilos para dispositivos menores que 768px */
+@media (max-width: 768px) {
+    .row.align-items-center {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .img-dosea {
+        width: 140px;
+        height: auto;
+    }
+
+    .row h1 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .row.align-items-center {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .img-dosea {
+        width: 140px;
+        height: auto;
+    }
+
+    .row h1 {
+        font-size: 25px;
+    }
+
+}
+
+/* --------------------- Botao Rolar------------------------- */
+/* Estilos do botão de rolar para o topo */
+#btnScrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #fff500;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#btnScrollToTop svg {
+    width: 24px;
+    height: 24px;
+}
+
+#btnScrollToTop:hover {
+    background-color: #d1c900;
+}
+
+button {
+    background-color: #0086FF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* ------------------------------MODO Noturno------------------------------------- */
+.btn-transparent {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.btn-transparent svg {
+    color: #F2F2F2;
+    width: 24px;
+    height: 24px;
+}
+
+.btn-transparent:hover svg {
+    color: #ddd;
+}
+
+.product-price.dark-mode {
+    color: #ffffff;
+}
+
+body.dark-mode {
+    background-color: #000;
+    color: #f2f2f2;
+}
+
+.card.dark-mode {
+    background-color: #333;
+    color: #f2f2f2;
+    box-shadow: 4px 4px 12px #000;
+}
+
+.NomeProduto.dark-mode,
+.section-title.dark-mode {
+    color: #ffffff;
+}
+
+section.dark-mode {
+    background-color: #000;
+}
+
+#btnInicio,
+#btnComentario {
+    border: none;
+    background-color: transparent;
+    color: #F2F2F2;
+}
+
+#btnInicio:hover,
+#btnComentario:hover {
+    color: white;
+}
+
+.container.dark-mode {
+    background-color: #000;
+    color: #f2f2f2;
+}
+
+/* ------------------------------Categorias------------------------------------- */
+/* Estilo para o botão dropdown */
+.btn-group .btn-primary {
+    background-color: #0086FF;
+    border-color: #0086FF;
+    color: white;
+}
+
+/* Estilo para o dropdown */
+.dropdown-menu {
+    background-color: white;
+    padding: 0;
+    border: 1px solid #0086FF;
+    border-radius: .375rem;
+}
+
+/* Estilo para os itens do dropdown */
+.dropdown-menu .dropdown-item {
+    color: black;
+}
+
+/* Estilo para os itens do dropdown ao passar o mouse */
+.dropdown-menu .dropdown-item:hover {
+    background-color: #0086FF;
+    color: white;
+}
+
+/* --------------------------------------- */
+/* Classe personalizada para botões do menu */
+#btnAjudeMe {
+    background-color: #0086FF;
+    border-color: #0086FF;
+    color: white;
+    border-radius: .375rem;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#btnAjudeMe:hover {
+    background-color: #0060CC;
+    border-color: #0060CC;
+}
+
+.icon-size {
+    width: 34px !important;
+    height: 34px !important;
+}
+
+/* --------------------------------------- */
+/* Estilo do botão Comprar */
+.btn-comprar {
+    background-color: #0086FF;
+    color: white;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-comprar:hover {
+    background-color: #47a0ff;
+    /* Cor de fundo ao passar o mouse (um tom mais escuro) */
+    color: white;
+    /* Mantém a cor do texto em branco */
+}
